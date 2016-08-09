@@ -1,3 +1,5 @@
+# -*- encoding:utf-8 -*-
+# **暂时没什么用处
 # Script Name	: backup_automater_services.py
 # Author			: Craig Richards
 # Created			: 24th October 2012
@@ -12,8 +14,8 @@ import shutil							# Load the library module
 import datetime						# Load the library module
 import os   							# Load the library module
 
-today = datetime.date.today()	  # Get Today's date
-todaystr = today.isoformat()		# Format it so we can use the format to create the directory
+today = datetime.date.today()	  # 得到当前日期
+todaystr = today.isoformat()		# 格式化日期为字符串，我们利用这个字符串来命名文件夹
 
 confdir = os.getenv("my_config")		  	# Set the variable by getting the value from the OS setting
 dropbox = os.getenv("dropbox") 					# Set the variable by getting the value from the OS setting
